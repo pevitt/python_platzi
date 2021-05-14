@@ -1,6 +1,6 @@
 def read():
     numbers = []
-    with open("./archivos/numbers.txt", "r") as f:
+    with open("./archivos/numbers.txt", encoding="utf-8") as f:
         for line in f:
             numbers.append(int(line))
     print(numbers)
